@@ -20,9 +20,9 @@ mapping.csv: Contains the genre mapping data.
 Main Script: The script that runs the model training and prediction.
 
 ### Code Overview
-Initialization: The script sets up the Spark environment, initializes SparkContext and SparkSession, and imports necessary libraries for data manipulation and machine learning.
-Data Loading: It loads the training, test, and genre mapping data from CSV files into Pandas DataFrames and then converts them into Spark DataFrames for further processing.
-Data Preprocessing: The plot descriptions are processed using tokenization and stop words removal. This converts raw text into a format suitable for feature extraction.
-Feature Extraction: Various techniques like Count Vectorizer, HashingTF, and Word2Vec are used to convert the processed text into numerical features that can be fed into machine learning models.
-Model Training and Prediction: A Random Forest Classifier is trained on the extracted features. The model then predicts the genres for the test data. The results are transformed into readable genre labels and saved to CSV files.
-Output: The predictions are saved into CSV files, which include the movie IDs and their corresponding predicted genres.
+1. Initialization: The script sets up the Spark environment, initializes SparkContext and SparkSession, and imports necessary libraries for data manipulation and machine learning.
+2. Data Loading: It loads the training, test, and genre mapping data from CSV files into Pandas DataFrames and then converts them into Spark DataFrames for further processing. 
+3. Data Preprocessing: The plot descriptions are processed using tokenization and stop words removal. This converts raw text into a format suitable for feature extraction.
+4. Feature Extraction: Various techniques like Count Vectorizer, HashingTF, and Word2Vec are used to convert the processed text into numerical features that can be fed into machine learning models.
+5. Model Training and Prediction: A Random Forest Classifier is trained on the extracted features. The model then predicts the genres for the test data. The results are transformed into readable genre labels and saved to CSV files.
+6. Output: The predictions are saved into CSV files, which include the movie IDs and their corresponding predicted genres.
